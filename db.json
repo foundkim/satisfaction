@@ -1,0 +1,100 @@
+{
+  "avis": [
+    {
+      "motif": "Consultation",
+      "service": "TExt",
+      "appreciation": "Satisfait",
+      "note": 2,
+      "reason": "",
+      "id": "ccdc"
+    },
+    {
+      "id": "aeda",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "happy",
+      "note": 3,
+      "reason": ""
+    },
+    {
+      "id": "8f27",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "unhappy",
+      "note": 0,
+      "reason": "Prise en charge"
+    },
+    {
+      "id": "f4f0",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "unhappy",
+      "note": 0,
+      "reason": "Etat des chambres"
+    },
+    {
+      "id": "9e5f",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "happy",
+      "note": 5,
+      "reason": ""
+    },
+    {
+      "id": "8606",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "unhappy",
+      "note": 0,
+      "reason": "Accueil"
+    },
+    {
+      "id": "a2fa",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "happy",
+      "note": 5,
+      "reason": ""
+    },
+    {
+      "id": "1de2",
+      "motif": "Urgence",
+      "service": "",
+      "appreciation": "happy",
+      "note": 4,
+      "reason": ""
+    },
+    {
+      "id": "7e3b",
+      "motif": "Hospitalisation",
+      "service": "",
+      "appreciation": "unhappy",
+      "note": 0,
+      "reason": "Prise en charge"
+    },
+    {
+      "id": "14a6",
+      "motif": "Urgence",
+      "service": "",
+      "appreciation": "happy",
+      "note": 4,
+      "reason": ""
+    },
+    {
+      "id": "a801",
+      "motif": "Hospitalisation",
+      "service": "",
+      "appreciation": "unhappy",
+      "note": 0,
+      "reason": "Accueil"
+    },
+    {
+      "id": "a84d",
+      "motif": "Hospitalisation",
+      "service": "",
+      "appreciation": "happy",
+      "note": 4,
+      "reason": ""
+    }
+  ]
+}

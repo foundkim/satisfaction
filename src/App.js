@@ -1,45 +1,17 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const Servives = (props) => {
-  const { services, setService, setActive } = props;
-
-  return (
-    <>
-      <div className="row">
-        {services.map((service) => (
-          <h4
-            onClick={() => {
-              setService(service);
-              setActive(true);
-            }}
-            className="m-2 p3"
-            style={{ textDecoration: "underline", color: "blue" }}
-          >
-            <h3>{service}</h3>
-            <hr />
-          </h4>
-        ))}
-      </div>
-    </>
-  );
-};
-
-const Satisfaction = (props) => {
-  const { service, motif } = props;
-  return (
-    <>
-      <h3>{service ? `${motif} / ${service} ` : motif}</h3>
-
-      <h5> Etes - vous satifaits ?</h5>
-    </>
-  );
-};
+import bgImage from "./aides.jpeg";
+import { Servives } from "./components/Services";
+import { Satisfaction } from "./components/Satisfaction";
+import ThankPage from "./components/ThankPage";
 
 function App() {
   const [active, setActive] = useState(false);
 
   const [currentService, setService] = useState("");
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const [motif, setMotif] = useState("");
   const motifWithServices = [
@@ -66,7 +38,16 @@ function App() {
   ];
 
   return (
-    <div className="App">
+    <div
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="App"
+    >
       <h1> Test</h1>
 
       <div className="container">
@@ -98,9 +79,14 @@ function App() {
             ))}
           </div>
         ) : (
-          <Satisfaction service={currentService} motif={motif} />
+          <Satisfaction
+            handleShow={handleShow}
+            service={currentService}
+            motif={motif}
+          />
         )}
       </div>
+      <ThankPage handleClose={handleClose} show={show} />
     </div>
   );
 }
