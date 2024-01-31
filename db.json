@@ -95,6 +95,22 @@
       "appreciation": "happy",
       "note": 4,
       "reason": ""
+    },
+    {
+      "id": "566f",
+      "motif": "Examen",
+      "service": "Laboratoire",
+      "appreciation": "unhappy",
+      "note": 0,
+      "reason": "Accueil"
+    },
+    {
+      "id": "1986",
+      "motif": "Consultation",
+      "service": "Diabétologie",
+      "appreciation": "happy",
+      "note": 3,
+      "reason": ""
     }
   ]
 }

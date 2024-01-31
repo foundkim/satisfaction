@@ -13,6 +13,10 @@ export const Satisfaction = (props) => {
   const happy = "happy";
   const [appreciation, setAppreciation] = useState("");
 
+  const refreshPage = () => {
+    window.location.reload(false);
+  };
+
   const rate = (note, reason) => {
     fetch(URL, {
       method: "POST",
@@ -70,6 +74,11 @@ export const Satisfaction = (props) => {
             {appreciation === unhappy && <Reason rate={rate} />}
           </div>
         </div>
+        <center className="mt-5">
+          <button onClick={refreshPage} className="btn btn-primary">
+            Retour à la page d'acceuil
+          </button>
+        </center>
       </div>
     </>
   );

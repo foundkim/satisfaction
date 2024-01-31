@@ -17,7 +17,11 @@ function App() {
   const motifWithServices = [
     {
       name: "Consultation",
-      services: ["Diabétologie", "medecine generale"],
+      services: [
+        "Diabétologie",
+        "medecine generale",
+        { specialities: ["Specialité 1", "Specialité 2"] },
+      ],
       color: "success",
     },
     {
